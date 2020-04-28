@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block heading %} 
+Make your appointment now!
+{% endblock %} 
+
+{% block body %}
+<form action="{{ url_for ('scheduled') }}" method="post">
+  <ul>
+   <li><input type="text" name="name" placeholder="Enter your name here"></li>
+   <li><input type="text" name="email" placeholder="Enter your email here"></li>
+   <li><input type="datetime" name="date" placeholder="Select your date"></li>
+   <button>Sumbit!</button>
+  </ul>
+</form>
+{% endblock %}
