@@ -19,5 +19,6 @@ def scheduled ():
     name = request.form.get ("name")
     date = request.form.get ("date")
     email = request.form.get ("email")
+        
     return render_template ("scheduled.html", name=name, date=date, email=email)
     
