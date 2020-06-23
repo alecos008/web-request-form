@@ -7,8 +7,12 @@ if __name__ == '__main__':
     app.run(debug=True)
 
 form = "form-control"
-@app.route("/index.html")
+@app.route("/")
 def index ():
+    return render_template ("index.html")
+
+@app.route("/index.html/")
+def home ():
     return render_template ("index.html")
 
 @app.route("/appoint.html")
